@@ -1,3 +1,4 @@
+
 import 'dart:io';
 import 'dart:convert';
 import 'dart:math';
@@ -18,7 +19,7 @@ int octToDecimal(int number)
   }
 
 
-void readFileAsync() async {
+void sample() async {
   String path  ="../test.tar.gz"; // replcace with path of your tar.gz file 
   File f = new File(path);
   final contents =await  f.readAsBytes();
@@ -37,5 +38,5 @@ void readFileAsync() async {
 }
 
   void main(){
-    readFileAsync();
+    sample();
   }
